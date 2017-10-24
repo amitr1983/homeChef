@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Intents
 
 class ViewController: UIViewController {
 
@@ -14,6 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
         // Do any additional setup after loading the view, typically from a nib.
+        INPreferences.requestSiriAuthorization { (status) in
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {

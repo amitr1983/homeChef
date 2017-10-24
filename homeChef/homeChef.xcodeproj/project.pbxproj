@@ -28,6 +28,7 @@
 		2849DFE01F9C0E66008CCB6C /* mapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapController.swift; sourceTree = "<group>"; };
 		2849E0001F9EE801008CCB6C /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		2849E0021F9EE812008CCB6C /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2849E0041F9F1D5E008CCB6C /* homeChef.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = homeChef.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 		2849DFCD1F9C0896008CCB6C /* homeChef */ = {
 			isa = PBXGroup;
 			children = (
+				2849E0041F9F1D5E008CCB6C /* homeChef.entitlements */,
 				2849DFCE1F9C0896008CCB6C /* AppDelegate.swift */,
 				2849DFD01F9C0896008CCB6C /* ViewController.swift */,
 				2849DFD21F9C0896008CCB6C /* Main.storyboard */,
@@ -107,6 +109,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = L7YB54A645;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -273,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = homeChef/homeChef.entitlements;
 				DEVELOPMENT_TEAM = L7YB54A645;
 				INFOPLIST_FILE = homeChef/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -286,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = homeChef/homeChef.entitlements;
 				DEVELOPMENT_TEAM = L7YB54A645;
 				INFOPLIST_FILE = homeChef/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

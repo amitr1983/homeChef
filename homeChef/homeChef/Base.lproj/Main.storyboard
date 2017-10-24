@@ -69,7 +69,7 @@
             </objects>
             <point key="canvasLocation" x="623.20000000000005" y="124.58770614692655"/>
         </scene>
-        <!--Location-->
+        <!--Explore Food-->
         <scene sceneID="Uid-iW-WMx">
             <objects>
                 <viewController id="H0a-0T-eQT" customClass="mapController" customModule="homeChef" customModuleProvider="target" sceneMemberID="viewController">
@@ -96,7 +96,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Location" image="location" id="af9-8S-6kI"/>
+                    <tabBarItem key="tabBarItem" title="Explore" image="location" id="af9-8S-6kI"/>
+                    <navigationItem key="navigationItem" title="Explore Food" id="caA-ch-sjR"/>
                     <connections>
                         <outlet property="mapView" destination="aG8-nN-akH" id="jfD-4q-CpS"/>
                     </connections>
