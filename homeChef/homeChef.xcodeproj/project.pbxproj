@@ -13,6 +13,8 @@
 		2849DFD61F9C0896008CCB6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2849DFD51F9C0896008CCB6C /* Assets.xcassets */; };
 		2849DFD91F9C0896008CCB6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2849DFD71F9C0896008CCB6C /* LaunchScreen.storyboard */; };
 		2849DFE11F9C0E66008CCB6C /* mapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849DFE01F9C0E66008CCB6C /* mapController.swift */; };
+		2849E0011F9EE801008CCB6C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849E0001F9EE801008CCB6C /* SignInViewController.swift */; };
+		2849E0031F9EE812008CCB6C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849E0021F9EE812008CCB6C /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2849DFD81F9C0896008CCB6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2849DFDA1F9C0896008CCB6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2849DFE01F9C0E66008CCB6C /* mapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapController.swift; sourceTree = "<group>"; };
+		2849E0001F9EE801008CCB6C /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		2849E0021F9EE812008CCB6C /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				2849DFD71F9C0896008CCB6C /* LaunchScreen.storyboard */,
 				2849DFDA1F9C0896008CCB6C /* Info.plist */,
 				2849DFE01F9C0E66008CCB6C /* mapController.swift */,
+				2849E0001F9EE801008CCB6C /* SignInViewController.swift */,
+				2849E0021F9EE812008CCB6C /* SignUpViewController.swift */,
 			);
 			path = homeChef;
 			sourceTree = "<group>";
@@ -140,9 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2849E0011F9EE801008CCB6C /* SignInViewController.swift in Sources */,
 				2849DFD11F9C0896008CCB6C /* ViewController.swift in Sources */,
 				2849DFCF1F9C0896008CCB6C /* AppDelegate.swift in Sources */,
 				2849DFE11F9C0E66008CCB6C /* mapController.swift in Sources */,
+				2849E0031F9EE812008CCB6C /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +314,7 @@
 				2849DFDF1F9C0896008CCB6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
