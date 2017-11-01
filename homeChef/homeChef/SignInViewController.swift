@@ -14,11 +14,14 @@ class SignInViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.activityIndicator.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,10 +30,13 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func loginAction(_ sender: AnyObject) {
+        self.activityIndicator.isHidden = false
         
         if self.emailTextField.text == "" || self.passwordTextField.text == "" {
             
             //Alert to tell the user that there was an error because they didn't fill anything in the textfields because they didn't fill anything in
+            
+            self.activityIndicator.isHidden = true
             
             let alertController = UIAlertController(title: "Error", message: "Please enter an email and password.", preferredStyle: .alert)
             
@@ -39,9 +45,12 @@ class SignInViewController: UIViewController {
             
             self.present(alertController, animated: true, completion: nil)
             
+            
         } else {
             
             Auth.auth().signIn(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!) { (user, error) in
+                
+                self.activityIndicator.isHidden = true //hide the spinner
                 
                 if error == nil {
                     

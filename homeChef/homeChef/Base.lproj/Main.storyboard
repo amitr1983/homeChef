@@ -673,15 +673,6 @@
                                 <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dg6-Y9-qb5">
-                                <rect key="frame" x="80" y="354" width="214" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="7SX-p9-8sG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IV-4f-ASU">
                                 <rect key="frame" x="86" y="445" width="80" height="30"/>
                                 <color key="backgroundColor" red="0.91793435810000001" green="0.49147170779999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -717,6 +708,18 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chef_logo" translatesAutoresizingMaskIntoConstraints="NO" id="kI0-Og-WhO">
                                 <rect key="frame" x="89" y="93" width="197" height="105"/>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Mp7-Gp-0jP">
+                                <rect key="frame" x="177" y="300" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dg6-Y9-qb5">
+                                <rect key="frame" x="80" y="354" width="214" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7SX-p9-8sG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -727,6 +730,7 @@
                             <constraint firstItem="B9v-46-h4m" firstAttribute="centerX" secondItem="dg6-Y9-qb5" secondAttribute="centerX" id="IC3-t4-Ri6"/>
                             <constraint firstItem="Vk0-AY-Sk4" firstAttribute="leading" secondItem="MBu-6C-Y1G" secondAttribute="leadingMargin" constant="46" id="JeE-fD-MQy"/>
                             <constraint firstItem="Vk0-AY-Sk4" firstAttribute="centerX" secondItem="MBu-6C-Y1G" secondAttribute="centerX" id="K8A-gn-KYZ"/>
+                            <constraint firstItem="Mp7-Gp-0jP" firstAttribute="centerX" secondItem="B9v-46-h4m" secondAttribute="centerX" id="LMF-KK-Dtf"/>
                             <constraint firstItem="OFm-59-OrT" firstAttribute="top" secondItem="Vk0-AY-Sk4" secondAttribute="bottom" constant="22" id="M5e-FF-chb"/>
                             <constraint firstItem="OFm-59-OrT" firstAttribute="trailing" secondItem="dg6-Y9-qb5" secondAttribute="trailing" id="MWa-eO-wGf"/>
                             <constraint firstItem="V7y-y4-ENM" firstAttribute="top" secondItem="6IV-4f-ASU" secondAttribute="bottom" constant="192" id="MXT-Xl-Dn3"/>
@@ -741,6 +745,7 @@
                             <constraint firstItem="KSQ-W5-dfx" firstAttribute="trailing" secondItem="Usz-TQ-EL3" secondAttribute="trailing" id="mct-ac-LNB"/>
                             <constraint firstItem="B9v-46-h4m" firstAttribute="leading" secondItem="MBu-6C-Y1G" secondAttribute="leadingMargin" constant="70" id="mvi-ha-iaO"/>
                             <constraint firstItem="OFm-59-OrT" firstAttribute="leading" secondItem="MBu-6C-Y1G" secondAttribute="leadingMargin" constant="64" id="ps8-TQ-zr7"/>
+                            <constraint firstItem="Mp7-Gp-0jP" firstAttribute="top" secondItem="OFm-59-OrT" secondAttribute="bottom" constant="8" symbolic="YES" id="qQZ-2f-tH6"/>
                             <constraint firstItem="B9v-46-h4m" firstAttribute="top" secondItem="OFm-59-OrT" secondAttribute="bottom" constant="23" id="qcL-6J-heC"/>
                             <constraint firstItem="Vk0-AY-Sk4" firstAttribute="centerX" secondItem="OFm-59-OrT" secondAttribute="centerX" id="tGv-4O-dOy"/>
                             <constraint firstItem="6IV-4f-ASU" firstAttribute="top" secondItem="Usz-TQ-EL3" secondAttribute="top" id="ufZ-Ms-NCW"/>
@@ -748,6 +753,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="Mp7-Gp-0jP" id="Ry5-x8-zGI"/>
                         <outlet property="emailTextField" destination="B9v-46-h4m" id="cUO-xX-hsj"/>
                         <outlet property="passwordTextField" destination="KSQ-W5-dfx" id="9L4-DV-jPQ"/>
                     </connections>
