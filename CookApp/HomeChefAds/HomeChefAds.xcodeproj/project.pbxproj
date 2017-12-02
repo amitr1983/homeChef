@@ -10,6 +10,7 @@
 		290A76871FA3F71A0045E47F /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290A76861FA3F71A0045E47F /* MenuTableViewController.m */; };
 		290A768A1FA3F94E0045E47F /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290A76891FA3F94E0045E47F /* SignInViewController.m */; };
 		290A768D1FA3FD510045E47F /* OrderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290A768C1FA3FD510045E47F /* OrderTableViewController.m */; };
+		291EE6401FD0EE7200773302 /* MenuItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 291EE63F1FD0EE7200773302 /* MenuItemViewController.m */; };
 		294603B21FA3ED6500DF68D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 294603B11FA3ED6500DF68D6 /* AppDelegate.m */; };
 		294603BB1FA3ED6500DF68D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294603B91FA3ED6500DF68D6 /* Main.storyboard */; };
 		294603BD1FA3ED6500DF68D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 294603BC1FA3ED6500DF68D6 /* Assets.xcassets */; };
@@ -24,6 +25,8 @@
 		290A76891FA3F94E0045E47F /* SignInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		290A768B1FA3FD510045E47F /* OrderTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderTableViewController.h; sourceTree = "<group>"; };
 		290A768C1FA3FD510045E47F /* OrderTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderTableViewController.m; sourceTree = "<group>"; };
+		291EE63E1FD0EE7200773302 /* MenuItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuItemViewController.h; sourceTree = "<group>"; };
+		291EE63F1FD0EE7200773302 /* MenuItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuItemViewController.m; sourceTree = "<group>"; };
 		294603AD1FA3ED6500DF68D6 /* HomeChefAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeChefAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		294603B01FA3ED6500DF68D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		294603B11FA3ED6500DF68D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,6 +51,8 @@
 		294603A41FA3ED6500DF68D6 = {
 			isa = PBXGroup;
 			children = (
+				291EE63E1FD0EE7200773302 /* MenuItemViewController.h */,
+				291EE63F1FD0EE7200773302 /* MenuItemViewController.m */,
 				290A768B1FA3FD510045E47F /* OrderTableViewController.h */,
 				290A768C1FA3FD510045E47F /* OrderTableViewController.m */,
 				290A76851FA3F71A0045E47F /* MenuTableViewController.h */,
@@ -156,6 +161,7 @@
 				290A768D1FA3FD510045E47F /* OrderTableViewController.m in Sources */,
 				294603B21FA3ED6500DF68D6 /* AppDelegate.m in Sources */,
 				290A76871FA3F71A0045E47F /* MenuTableViewController.m in Sources */,
+				291EE6401FD0EE7200773302 /* MenuItemViewController.m in Sources */,
 				294603C31FA3ED6500DF68D6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

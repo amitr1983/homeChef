@@ -28,6 +28,8 @@
     _orderList = @[@"Happy Burger x 3", @"Angel Wing x 1", @"Asian Noodle x 4", @"Grill Cake x 1", @"Tokuyaki x 3"];
     _foodImageList = @[@"Face1",@"Face2",@"Face3",@"Face4",@"Face5"];
 
+    NSString *result= [self getDataFrom:@"http://ec2-54-67-34-165.us-west-1.compute.amazonaws.com:3000/Chef/Menu?chefId=1"];
+//    NSLog(result);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,6 +60,23 @@
 
 }
 
+- (NSString *) getDataFrom:(NSString *)url{
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    [request setHTTPMethod:@"GET"];
+    [request setURL:[NSURL URLWithString:url]];
+    
+    NSError *error = nil;
+    NSHTTPURLResponse *responseCode = nil;
+    
+    NSData *oResponseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&responseCode error:&error];
+    
+    if([responseCode statusCode] != 200){
+        NSLog(@"Error getting %@, HTTP status code %i", url, [responseCode statusCode]);
+        return nil;
+    }
+    
+    return [[NSString alloc] initWithData:oResponseData encoding:NSUTF8StringEncoding];
+}
 
 /*
 // Override to support conditional editing of the table view.

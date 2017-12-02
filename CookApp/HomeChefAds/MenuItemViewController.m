@@ -1,20 +1,18 @@
 //
-//  MenuTableViewController.m
+//  MenuItemViewController.m
 //  HomeChefAds
 //
-//  Created by Tran Pham on 10/27/17.
+//  Created by Tran Pham on 11/30/17.
 //  Copyright © 2017 Tran Pham. All rights reserved.
 //
 
-#import "MenuTableViewController.h"
+#import "MenuItemViewController.h"
 
-@interface MenuTableViewController ()
-@property NSArray *menuList;
-@property NSArray *foodImageList;
+@interface MenuItemViewController ()
+
 @end
 
-
-@implementation MenuTableViewController
+@implementation MenuItemViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,9 +21,12 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    _menuList = @[@"Happy Burger", @"Angel Wing", @"Asian Noodle", @"Grill Cake", @"Tokuyaki"];
-    _foodImageList = @[@"F1",@"F2",@"F3",@"F4",@"F5"];
+    UIBarButtonItem *saveButton = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStyleDone target:self action:@selector(save)];
+    self.navigationItem.rightBarButtonItem = saveButton;
+}
+
+- (void) save{
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,25 +34,35 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+#pragma mark - invoke API
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+- (NSString *) getDataFrom:(NSString *)url{
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    [request setHTTPMethod:@"GET"];
+    [request setURL:[NSURL URLWithString:url]];
+    
+    NSError *error = nil;
+    NSHTTPURLResponse *responseCode = nil;
+    
+    NSData *oResponseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&responseCode error:&error];
+    
+    if([responseCode statusCode] != 200){
+        NSLog(@"Error getting %@, HTTP status code %i", url, [responseCode statusCode]);
+        return nil;
+    }
+    
+    return [[NSString alloc] initWithData:oResponseData encoding:NSUTF8StringEncoding];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _menuList.count;
-}
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *reusedId = @"foodCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reusedId forIndexPath:indexPath];
-    cell.textLabel.text = [_menuList objectAtIndex:indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:[_foodImageList objectAtIndex:indexPath.row]];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    
+    // Configure the cell...
     
     return cell;
 }
-
+*/
 
 /*
 // Override to support conditional editing of the table view.
