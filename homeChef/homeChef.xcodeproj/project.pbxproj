@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B965DE61FD14AD3006A92DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B965DE51FD14AD3006A92DF /* GoogleService-Info.plist */; };
+		1B965DEA1FD26475006A92DF /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B965DE91FD26475006A92DF /* OrderViewController.swift */; };
 		2849DFCF1F9C0896008CCB6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849DFCE1F9C0896008CCB6C /* AppDelegate.swift */; };
 		2849DFD11F9C0896008CCB6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849DFD01F9C0896008CCB6C /* ViewController.swift */; };
 		2849DFD41F9C0896008CCB6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2849DFD21F9C0896008CCB6C /* Main.storyboard */; };
@@ -15,11 +17,14 @@
 		2849DFE11F9C0E66008CCB6C /* mapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849DFE01F9C0E66008CCB6C /* mapController.swift */; };
 		2849E0011F9EE801008CCB6C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849E0001F9EE801008CCB6C /* SignInViewController.swift */; };
 		2849E0031F9EE812008CCB6C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849E0021F9EE812008CCB6C /* SignUpViewController.swift */; };
-		286BDE581FA98906003EA6B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 286BDE571FA98906003EA6B8 /* GoogleService-Info.plist */; };
+		28E94AC91FD138760068A3F7 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E94AC81FD138760068A3F7 /* HistoryViewController.swift */; };
+		28E94ACB1FD1429D0068A3F7 /* paymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E94ACA1FD1429D0068A3F7 /* paymentViewController.swift */; };
 		2AEA592A370DC6DAA26DA2C0 /* Pods_homeChef.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E899F6363CC60C1B28235A /* Pods_homeChef.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B965DE51FD14AD3006A92DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1B965DE91FD26475006A92DF /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		2849DFCB1F9C0895008CCB6C /* homeChef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homeChef.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2849DFCE1F9C0896008CCB6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2849DFD01F9C0896008CCB6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,7 +35,8 @@
 		2849DFE01F9C0E66008CCB6C /* mapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapController.swift; sourceTree = "<group>"; };
 		2849E0001F9EE801008CCB6C /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		2849E0021F9EE812008CCB6C /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		286BDE571FA98906003EA6B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		28E94AC81FD138760068A3F7 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		28E94ACA1FD1429D0068A3F7 /* paymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentViewController.swift; sourceTree = "<group>"; };
 		9DEADE837BCE384A3CACE5BA /* Pods-homeChef.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homeChef.release.xcconfig"; path = "Pods/Target Support Files/Pods-homeChef/Pods-homeChef.release.xcconfig"; sourceTree = "<group>"; };
 		A5E899F6363CC60C1B28235A /* Pods_homeChef.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_homeChef.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF5D248EE87C863123BEADB /* Pods-homeChef.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homeChef.debug.xcconfig"; path = "Pods/Target Support Files/Pods-homeChef/Pods-homeChef.debug.xcconfig"; sourceTree = "<group>"; };
@@ -72,13 +78,16 @@
 				2849DFCE1F9C0896008CCB6C /* AppDelegate.swift */,
 				2849DFD01F9C0896008CCB6C /* ViewController.swift */,
 				2849DFD21F9C0896008CCB6C /* Main.storyboard */,
+				1B965DE51FD14AD3006A92DF /* GoogleService-Info.plist */,
 				2849DFD51F9C0896008CCB6C /* Assets.xcassets */,
 				2849DFD71F9C0896008CCB6C /* LaunchScreen.storyboard */,
 				2849DFDA1F9C0896008CCB6C /* Info.plist */,
-				286BDE571FA98906003EA6B8 /* GoogleService-Info.plist */,
 				2849DFE01F9C0E66008CCB6C /* mapController.swift */,
 				2849E0001F9EE801008CCB6C /* SignInViewController.swift */,
 				2849E0021F9EE812008CCB6C /* SignUpViewController.swift */,
+				28E94AC81FD138760068A3F7 /* HistoryViewController.swift */,
+				28E94ACA1FD1429D0068A3F7 /* paymentViewController.swift */,
+				1B965DE91FD26475006A92DF /* OrderViewController.swift */,
 			);
 			path = homeChef;
 			sourceTree = "<group>";
@@ -169,7 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2849DFD91F9C0896008CCB6C /* LaunchScreen.storyboard in Resources */,
-				286BDE581FA98906003EA6B8 /* GoogleService-Info.plist in Resources */,
+				1B965DE61FD14AD3006A92DF /* GoogleService-Info.plist in Resources */,
 				2849DFD61F9C0896008CCB6C /* Assets.xcassets in Resources */,
 				2849DFD41F9C0896008CCB6C /* Main.storyboard in Resources */,
 			);
@@ -230,7 +239,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -243,8 +252,11 @@
 				2849E0011F9EE801008CCB6C /* SignInViewController.swift in Sources */,
 				2849DFD11F9C0896008CCB6C /* ViewController.swift in Sources */,
 				2849DFCF1F9C0896008CCB6C /* AppDelegate.swift in Sources */,
+				28E94AC91FD138760068A3F7 /* HistoryViewController.swift in Sources */,
 				2849DFE11F9C0E66008CCB6C /* mapController.swift in Sources */,
+				28E94ACB1FD1429D0068A3F7 /* paymentViewController.swift in Sources */,
 				2849E0031F9EE812008CCB6C /* SignUpViewController.swift in Sources */,
+				1B965DEA1FD26475006A92DF /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         super.viewWillDisappear(animated)
         
         // Show the navigation bar on other view controllers
-        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 }
 
